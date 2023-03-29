@@ -14,31 +14,31 @@ import romance from '../data/books/romance.json'
 import scifi from '../data/books/scifi.json'
 
 class AllTheBooks extends Component {
-    render () {
+    render() {
         return (
             <Container className='mt-5'>
-            <Row>
-                <h2>Fantasy</h2>
-                {fantasy.map((fantasyBook)=>{
-                    return (
-                    <Col xs={6} md={4} lg={3} xl={2} className='mt-4 d-flex' key={fantasyBook.asin}>
-                        <Card className='mb-4'>
-                            <Card.Img variant="top" src={fantasyBook.img}/>
-                            <Card.Body>
-                                <Card.Title className='fs-5'>{fantasyBook.title}</Card.Title>
-                            </Card.Body>
-                            <ListGroup className="list-group-flush">
-                                <ListGroup.Item>Category {fantasyBook.category}</ListGroup.Item>
-                                <ListGroup.Item>Price {fantasyBook.price} €</ListGroup.Item>
-                                <ListGroup.Item><Star/> <Star/> <Star/> <Star/> <Star/></ListGroup.Item>
-                            </ListGroup>
-                        </Card>
-                    </Col>
-                    )
-                })}
-            </Row>
+                <Row>
+                    <h2>Fantasy</h2>
+                    {fantasy.map((fantasyBook) => {
+                        return (
+                            <Col xs={6} md={4} lg={3} xl={2} className='mt-4 d-flex' key={fantasyBook.asin}>
+                                <Card className='mb-4'>
+                                    <Card.Img variant="top" src={fantasyBook.img} />
+                                    <Card.Body>
+                                        <Card.Title className='fs-5'>{fantasyBook.title}</Card.Title>
+                                    </Card.Body>
+                                    <ListGroup className="list-group-flush">
+                                        <ListGroup.Item>Category {fantasyBook.category}</ListGroup.Item>
+                                        <ListGroup.Item className='text-success'>Price {fantasyBook.price} €</ListGroup.Item>
+                                        <ListGroup.Item><Star /> <Star /> <Star /> <Star /> <Star /></ListGroup.Item>
+                                    </ListGroup>
+                                </Card>
+                            </Col>
+                        )
+                    })}
+                </Row>
 
-            <Row>
+                {/* <Row>
                 <h2>History</h2>
                  {history.map((historyBook)=>{
                     return (
@@ -120,8 +120,8 @@ class AllTheBooks extends Component {
                     </Col>
                     )
                 })}
-            </Row>
-        </Container>
+            </Row> */}
+            </Container>
         )
     }
 }
