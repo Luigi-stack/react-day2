@@ -20,7 +20,7 @@ class AllTheBooks extends Component {
                 <h2>Fantasy</h2>
                 {fantasy.map((fantasyBook)=>{
                     return (
-                    <Col xs={6} md={8} lg={3} className='mt-4 d-flex' key={fantasyBook.asin}>
+                    <Col xs={6} md={4} lg={3} xl={2} className='mt-4 d-flex' key={fantasyBook.asin}>
                         <Card className='mb-4'>
                             <Card.Img variant="top" src={fantasyBook.img}/>
                             <Card.Body>
@@ -40,7 +40,7 @@ class AllTheBooks extends Component {
                 <h2>History</h2>
                  {history.map((historyBook)=>{
                     return (
-                    <Col xs={6} md={8} lg={3} className='mt-4 d-flex' key={historyBook.asin}>
+                    <Col xs={6} md={4} lg={3} xl={2} className='mt-4 d-flex' key={historyBook.asin}>
                         <Card className='mb-4'>
                             <Card.Img variant="top" src={historyBook.img}/>
                             <Card.Body>
@@ -60,7 +60,7 @@ class AllTheBooks extends Component {
                 <h2>Horror</h2>
                 {horror.map((horrorBook)=>{
                     return (
-                    <Col xs={6} md={8} lg={3} className='mt-4 d-flex' key={horrorBook.asin}>
+                    <Col xs={6} md={4} lg={3} xl={2} className='mt-4 d-flex' key={horrorBook.asin}>
                         <Card className='mb-4'>
                             <Card.Img variant="top" src={horrorBook.img}/>
                             <Card.Body>
@@ -80,7 +80,7 @@ class AllTheBooks extends Component {
                 <h2>Romance</h2>
                 {romance.map((romanceBook)=>{
                     return (
-                    <Col xs={6} md={8} lg={3} className='mt-4 d-flex' key={romanceBook.asin}>
+                    <Col xs={6} md={4} lg={3} xl={2} className='mt-4 d-flex' key={romanceBook.asin}>
                         <Card className='mb-4'>
                             <Card.Img variant="top" src={romanceBook.img}/>
                             <Card.Body>
@@ -100,7 +100,7 @@ class AllTheBooks extends Component {
                 <h2>Scifi</h2>
                 {scifi.map((scifiBook)=>{
                     return (
-                    <Col xs={6} md={8} lg={3} className='mt-4 d-flex' key={scifiBook.asin}>
+                    <Col xs={6} md={4} lg={3} xl={2} className='mt-4 d-flex' key={scifiBook.asin}>
                         <Card className='mb-4'>
                             <Card.Img variant="top" src={scifiBook.img}/>
                             <Card.Body>
