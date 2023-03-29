@@ -3,8 +3,9 @@ import { Component } from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
+import Card from 'react-bootstrap/Card'
+import ListGroup from 'react-bootstrap/ListGroup'
+import { Star } from 'react-bootstrap-icons';
 
 import fantasy from '../data/books/fantasy.json'
 import history from '../data/books/history.json'
@@ -29,6 +30,7 @@ class AllTheBooks extends Component {
                             <ListGroup className="list-group-flush">
                                 <ListGroup.Item>Category {fantasyBook.category}</ListGroup.Item>
                                 <ListGroup.Item>Price {fantasyBook.price} €</ListGroup.Item>
+                                <ListGroup.Item><Star/> <Star/> <Star/> <Star/> <Star/></ListGroup.Item>
                             </ListGroup>
                         </Card>
                     </Col>
@@ -49,6 +51,7 @@ class AllTheBooks extends Component {
                             <ListGroup className="list-group-flush">
                                 <ListGroup.Item>Category {historyBook.category}</ListGroup.Item>
                                 <ListGroup.Item>Price {historyBook.price} €</ListGroup.Item>
+                                <ListGroup.Item><Star/> <Star/> <Star/> <Star/> <Star/></ListGroup.Item>
                             </ListGroup>
                         </Card>
                     </Col>
@@ -69,6 +72,7 @@ class AllTheBooks extends Component {
                             <ListGroup className="list-group-flush">
                                 <ListGroup.Item>Category {horrorBook.category}</ListGroup.Item>
                                 <ListGroup.Item>Price {horrorBook.price} €</ListGroup.Item>
+                                <ListGroup.Item><Star/> <Star/> <Star/> <Star/> <Star/></ListGroup.Item>
                             </ListGroup>
                         </Card>
                     </Col>
@@ -89,6 +93,7 @@ class AllTheBooks extends Component {
                             <ListGroup className="list-group-flush">
                                 <ListGroup.Item>Category {romanceBook.category}</ListGroup.Item>
                                 <ListGroup.Item>Price {romanceBook.price} €</ListGroup.Item>
+                                <ListGroup.Item><Star/> <Star/> <Star/> <Star/> <Star/></ListGroup.Item>
                             </ListGroup>
                         </Card>
                     </Col>
@@ -109,6 +114,7 @@ class AllTheBooks extends Component {
                             <ListGroup className="list-group-flush">
                                 <ListGroup.Item>Category {scifiBook.category}</ListGroup.Item>
                                 <ListGroup.Item>Price {scifiBook.price} €</ListGroup.Item>
+                                <ListGroup.Item><Star/> <Star/> <Star/> <Star/> <Star/></ListGroup.Item>
                             </ListGroup>
                         </Card>
                     </Col>
