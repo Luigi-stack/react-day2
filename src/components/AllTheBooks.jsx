@@ -24,7 +24,7 @@ class AllTheBooks extends Component {
                         <Card className='mb-4'>
                             <Card.Img variant="top" src={fantasyBook.img}/>
                             <Card.Body>
-                                <Card.Title>{fantasyBook.title}</Card.Title>
+                                <Card.Title className='fs-5'>{fantasyBook.title}</Card.Title>
                             </Card.Body>
                             <ListGroup className="list-group-flush">
                                 <ListGroup.Item>Category {fantasyBook.category}</ListGroup.Item>
@@ -44,7 +44,7 @@ class AllTheBooks extends Component {
                         <Card className='mb-4'>
                             <Card.Img variant="top" src={historyBook.img}/>
                             <Card.Body>
-                                <Card.Title>{historyBook.title}</Card.Title>
+                                <Card.Title className='fs-5'>{historyBook.title}</Card.Title>
                             </Card.Body>
                             <ListGroup className="list-group-flush">
                                 <ListGroup.Item>Category {historyBook.category}</ListGroup.Item>
@@ -64,7 +64,7 @@ class AllTheBooks extends Component {
                         <Card className='mb-4'>
                             <Card.Img variant="top" src={horrorBook.img}/>
                             <Card.Body>
-                                <Card.Title>{horrorBook.title}</Card.Title>
+                                <Card.Title className='fs-5'>{horrorBook.title}</Card.Title>
                             </Card.Body>
                             <ListGroup className="list-group-flush">
                                 <ListGroup.Item>Category {horrorBook.category}</ListGroup.Item>
@@ -84,7 +84,7 @@ class AllTheBooks extends Component {
                         <Card className='mb-4'>
                             <Card.Img variant="top" src={romanceBook.img}/>
                             <Card.Body>
-                                <Card.Title>{romanceBook.title}</Card.Title>
+                                <Card.Title className='fs-5'>{romanceBook.title}</Card.Title>
                             </Card.Body>
                             <ListGroup className="list-group-flush">
                                 <ListGroup.Item>Category {romanceBook.category}</ListGroup.Item>
@@ -104,7 +104,7 @@ class AllTheBooks extends Component {
                         <Card className='mb-4'>
                             <Card.Img variant="top" src={scifiBook.img}/>
                             <Card.Body>
-                                <Card.Title>{scifiBook.title}</Card.Title>
+                                <Card.Title className='fs-5'>{scifiBook.title}</Card.Title>
                             </Card.Body>
                             <ListGroup className="list-group-flush">
                                 <ListGroup.Item>Category {scifiBook.category}</ListGroup.Item>
