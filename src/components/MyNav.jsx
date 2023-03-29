@@ -4,8 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function MyNav() {
   return (
-    <>
-<Navbar bg="white" expand="lg">
+<Navbar bg="white" expand="lg" fixed="top">
       <Container fluid>
       <Navbar.Brand href="#home">
             <img
@@ -25,7 +24,6 @@ function MyNav() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    </>
   );
 }
 
