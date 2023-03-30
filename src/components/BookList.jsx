@@ -8,7 +8,7 @@ import { Component } from 'react'
 
 class BookList extends Component {
 
-    filterBookList = (e) => 
+    
 
     render () {
         return (
